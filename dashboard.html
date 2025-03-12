@@ -1,0 +1,359 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Wallet Sentinel
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Arial', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <div class="min-h-screen flex">
+   <!-- Sidebar -->
+   <div class="w-1/5 bg-gray-900 p-4">
+    <div class="flex items-center mb-8">
+     <i class="fas fa-shield-alt text-purple-500 text-2xl">
+     </i>
+     <span class="ml-2 text-xl font-bold text-purple-500">
+      Wallet Sentinel
+     </span>
+    </div>
+    <nav>
+     <ul>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-300 hover:text-white" href="#">
+        <i class="fas fa-tachometer-alt mr-2">
+        </i>
+        Dashboard
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-300 hover:text-white" href="#">
+        <i class="fas fa-plus-circle mr-2">
+        </i>
+        Adicionar Despesas
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-300 hover:text-white" href="#">
+        <i class="fas fa-plus-circle mr-2">
+        </i>
+        Adicionar Ganho
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-300 hover:text-white" href="#">
+        <i class="fas fa-bullseye mr-2">
+        </i>
+        Metas
+       </a>
+      </li>
+     </ul>
+    </nav>
+    <div class="mt-auto">
+     <a class="flex items-center text-gray-300 hover:text-white" href="#">
+      <i class="fas fa-sign-out-alt mr-2">
+      </i>
+      Sign out
+     </a>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="w-4/5 p-8">
+    <div class="flex justify-between items-center mb-8">
+     <div>
+      <h1 class="text-3xl font-bold text-purple-500">
+       Sentinel
+      </h1>
+      <p class="text-gray-400">
+       Sua disciplina define sua liberdade financeira
+      </p>
+     </div>
+     <div class="text-gray-400">
+      <span>
+       Mostrando Filtro de
+      </span>
+      <input class="bg-gray-800 text-white p-2 rounded" type="text" value="01 Mar, 2024 - 14 Mar, 2024"/>
+     </div>
+     <div class="text-gray-400">
+      <span>
+       Andrino Cabral
+      </span>
+     </div>
+    </div>
+    <div class="grid grid-cols-3 gap-8">
+     <!-- Proventos x Despesas -->
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <div class="flex justify-between items-center mb-4">
+       <h2 class="text-xl font-bold">
+        Proventos x Despesas
+       </h2>
+       <button class="text-gray-400">
+        Ver Mais
+       </button>
+      </div>
+      <p class="text-gray-400 mb-4">
+       From 1-14 Mar, 2024
+      </p>
+      <img alt="Graph showing Proventos and Gastos trends" class="w-full h-40 object-cover mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/E4Rlosr6oIE1BuP85qVm0Dkks82olG2D5beq4BlrYbg.jpg" width="300"/>
+      <div class="flex justify-between text-gray-400">
+       <span class="flex items-center">
+        <span class="w-3 h-3 bg-green-500 rounded-full mr-2">
+        </span>
+        Proventos
+       </span>
+       <span class="flex items-center">
+        <span class="w-3 h-3 bg-red-500 rounded-full mr-2">
+        </span>
+        Gastos
+       </span>
+      </div>
+     </div>
+     <!-- Despesas -->
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <div class="flex justify-between items-center mb-4">
+       <h2 class="text-xl font-bold">
+        Despesas
+       </h2>
+       <button class="text-gray-400">
+        Ver Mais
+       </button>
+      </div>
+      <p class="text-gray-400 mb-4">
+       From 1-14 Mar, 2024
+      </p>
+      <img alt="Pie chart showing Despesas breakdown" class="w-full h-40 object-cover mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/mNMfwwUjVVcsjLekjgwPQSthFMDIqvDRlRoHCrYVEMg.jpg" width="150"/>
+      <div class="text-gray-400">
+       <p>
+        Comida 42%
+       </p>
+       <p>
+        Compras 36%
+       </p>
+       <p>
+        Assinaturas 15%
+       </p>
+       <p>
+        Transporte 5%
+       </p>
+      </div>
+     </div>
+     <!-- Pagamentos futuros -->
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <div class="flex justify-between items-center mb-4">
+       <h2 class="text-xl font-bold">
+        Pagamentos futuros
+       </h2>
+       <button class="text-gray-400">
+        Ver Mais
+       </button>
+      </div>
+      <ul class="text-gray-400">
+       <li class="flex justify-between mb-2">
+        <span>
+         20 Mar
+        </span>
+        <span>
+         Youtube Premium
+        </span>
+        <span>
+         -R$29.90
+        </span>
+       </li>
+       <li class="flex justify-between mb-2">
+        <span>
+         25 Mar
+        </span>
+        <span>
+         Preschool
+        </span>
+        <span>
+         -R$269.00
+        </span>
+       </li>
+       <li class="flex justify-between mb-2">
+        <span>
+         30 Mar
+        </span>
+        <span>
+         Rent
+        </span>
+        <span>
+         -R$2100.00
+        </span>
+       </li>
+       <li class="flex justify-between mb-2">
+        <span>
+         05 Apr
+        </span>
+        <span>
+         Spotify
+        </span>
+        <span>
+         -R$11.99
+        </span>
+       </li>
+      </ul>
+     </div>
+     <!-- Transações recentes -->
+     <div class="col-span-2 bg-gray-800 p-4 rounded-lg">
+      <div class="flex justify-between items-center mb-4">
+       <h2 class="text-xl font-bold">
+        Transações recentes
+       </h2>
+       <button class="text-gray-400">
+        Ver todo histórico
+       </button>
+      </div>
+      <p class="text-gray-400 mb-4">
+       De 1-14 Mar, 2024
+      </p>
+      <table class="w-full text-gray-400">
+       <thead>
+        <tr>
+         <th class="text-left">
+          Descrição
+         </th>
+         <th class="text-left">
+          Data
+         </th>
+         <th class="text-left">
+          Categoria
+         </th>
+         <th class="text-left">
+          Valor
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          Freelance
+         </td>
+         <td>
+          Mar 14
+         </td>
+         <td>
+          Renda Extra
+         </td>
+         <td>
+          +R$2,320.00
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Café Dona Hilda
+         </td>
+         <td>
+          Mar 12
+         </td>
+         <td>
+          Comida
+         </td>
+         <td>
+          -R$5.50
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Retorno Impost de Renda
+         </td>
+         <td>
+          Mar 10
+         </td>
+         <td>
+          Finanças
+         </td>
+         <td>
+          +R$3,400.00
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Floricultura Paraíso
+         </td>
+         <td>
+          Mar 09
+         </td>
+         <td>
+          Presentes
+         </td>
+         <td>
+          R$19.90
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Gasolina
+         </td>
+         <td>
+          Mar 08
+         </td>
+         <td>
+          Transporte
+         </td>
+         <td>
+          R$250.00
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Lanche Mc Donalds
+         </td>
+         <td>
+          Mar 07
+         </td>
+         <td>
+          Comida
+         </td>
+         <td>
+          R$24.99
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <!-- Meta Tracker -->
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <div class="flex justify-between items-center mb-4">
+       <h2 class="text-xl font-bold">
+        Meta Tracker
+       </h2>
+       <button class="text-gray-400">
+        Ver Metas
+       </button>
+      </div>
+      <p class="text-gray-400 mb-4">
+       34.5% Da meta concluída, vamos em frente!
+      </p>
+      <p class="text-purple-500 mb-4">
+       META EM DESTAQUE
+      </p>
+      <p class="text-white mb-4">
+       PLACA DE VIDEO RTX 5090
+      </p>
+      <p class="text-3xl font-bold text-white mb-4">
+       R$1,724
+      </p>
+      <p class="text-gray-400 mb-4">
+       De R$9,000
+      </p>
+      <button class="bg-purple-500 text-white py-2 px-4 rounded mb-4">
+       Data maxima para conclusão da meta
+      </button>
+      <p class="text-gray-400">
+       31/12/2025
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Sentinel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-black text-white font-sans">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-1/5 bg-gray-900 p-4">
+            <div class="text-xl font-bold mb-8">Wallet Sentinel</div>
+            <nav class="space-y-4">
+                <a href="#" class="flex items-center space-x-2 text-purple-500">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Adicione uma Despesa</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2">
+                    <i class="fas fa-plus-circle"></i>
+                    <span>Adicione um Provento</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2">
+                    <i class="fas fa-bullseye"></i>
+                    <span>Metas</span>
+                </a>
+                <a href="#" class="flex items-center space-x-2 mt-auto text-purple-500">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Sair</span>
+                </a>
+            </nav>
+        </div>
+        <!-- Main Content -->
+        <div class="flex-1 p-8">
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-3xl text-purple-500">Adicionar despesas</h1>
+                <div class="flex items-center space-x-2">
+                    <span>Aplicar Filtro</span>
+                    <input type="text" class="bg-gray-800 text-white p-2 rounded" value="01 Mar, 2025 - 14 Mar, 2025">
+                    <i class="fas fa-calendar-alt text-purple-500"></i>
+                </div>
+            </div>
+            <div class="grid grid-cols-6 gap-4 mb-8">
+                <input type="text" class="col-span-1 bg-gray-800 text-white p-2 rounded" value="25 / 12 / 2025">
+                <input type="text" class="col-span-2 bg-gray-800 text-white p-2 rounded" value="Pagamento Carro">
+                <div class="col-span-1 flex items-center space-x-2">
+                    <input type="checkbox" class="bg-gray-800 text-white p-2 rounded">
+                    <span>Recorrente</span>
+                </div>
+                <input type="text" class="col-span-1 bg-gray-800 text-white p-2 rounded" value="R$: 2.578,67">
+                <input type="text" class="col-span-1 bg-gray-800 text-white p-2 rounded" value="Transporte">
+                <input type="text" class="col-span-1 bg-gray-800 text-white p-2 rounded" value="25 / 01 / 2025">
+                <input type="text" class="col-span-1 bg-gray-800 text-white p-2 rounded" value="25 / 12 / 2025">
+            </div>
+            <div class="bg-gray-800 p-4 rounded">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl">Despesas recentes</h2>
+                    <button class="bg-gray-700 text-white p-2 rounded">Ver todo histórico</button>
+                </div>
+                <table class="w-full text-left">
+                    <thead>
+                        <tr>
+                            <th class="py-2">Date</th>
+                            <th class="py-2">Descrição</th>
+                            <th class="py-2">Valor</th>
+                            <th class="py-2">Categoria</th>
+                            <th class="py-2">Inicio</th>
+                            <th class="py-2">Fim</th>
+                            <th class="py-2"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2">25 / 12 / 2025</td>
+                            <td class="py-2">Pagamento Carro</td>
+                            <td class="py-2">R$: 2.578,67</td>
+                            <td class="py-2">Transporte</td>
+                            <td class="py-2">25 / 01 / 2025</td>
+                            <td class="py-2">25 / 12 / 2025</td>
+                            <td class="py-2">
+                                <button class="bg-transparent border border-purple-500 text-purple-500 p-2 rounded">Editar</button>
+                            </td>
+                        </tr>
+                        <!-- Repeat for each news item -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
